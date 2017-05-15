@@ -51,6 +51,15 @@ namespace AquaintDemoLive
 
 			app.Tap("acquaintanceListFloatingActionButton");
 			app.Screenshot("Let's start by Tapping on the Floating Action Button to add a new contact");
+
+			#region FirstName
+			app.Tap("firstNameField");
+			app.Screenshot("Then we Tapped on the 'First Name' Text Field");
+			app.EnterText("Bill");
+			app.Screenshot("We typed in our first name, 'Bill'");
+			app.DismissKeyboard();
+			app.Screenshot("Dismissed Keyboard");
+			#endregion
 		}
 
 	}
