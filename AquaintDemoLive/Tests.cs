@@ -45,7 +45,7 @@ namespace AquaintDemoLive
 			app.Tap(x => x.Class("android.widget.EditText").Index(0));
 			app.EnterText("juneDemo");
 			app.DismissKeyboard();
-			app.Tap("setupContinueButton");
+			app.Tap(x => x.Class("android.widget.Button"));
 			//PRO-TIP: The test steps taken above will NOT appear in Test Cloud becuase I did not put screenshots
 
 			app.Tap("acquaintanceListFloatingActionButton");
@@ -111,7 +111,7 @@ namespace AquaintDemoLive
 			app.Screenshot("We entered in our credentials");
 			app.DismissKeyboard();
 			app.Screenshot("Dismissed Keyboard");
-			app.Tap("setupContinueButton");
+			app.Tap(x => x.Class("android.widget.Button"));
 			app.Screenshot("Then we Tapped on the 'Continue' Button");
 
 			app.Tap("Gates, Bill");
