@@ -48,7 +48,7 @@ namespace AquaintDemoLive
 			app.Tap(x => x.Class("android.widget.Button"));
 			//PRO-TIP: The test steps taken above will NOT appear in Test Cloud becuase I did not put screenshots
 
-			app.Tap("acquaintanceListFloatingActionButton");
+			app.Tap(x => x.Class("android.widget.ImageButton").Index(0));
 			app.Screenshot("Let's start by Tapping on the Floating Action Button to add a new contact");
 			//PRO-TIP: Screenshots will enable to view the step definition in the Test Cloud portal 
 
