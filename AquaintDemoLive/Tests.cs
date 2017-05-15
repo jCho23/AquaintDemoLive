@@ -99,7 +99,12 @@ namespace AquaintDemoLive
 
 			app.Tap("acquaintanceSaveButton");
 			app.Screenshot("Lastly, we saved our new contact");
+		}
 
+		[Test]
+		public void CheckContactTest()
+		{
+			
 		}
 
 	}
