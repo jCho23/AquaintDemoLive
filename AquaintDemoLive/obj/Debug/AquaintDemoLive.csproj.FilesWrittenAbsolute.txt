@@ -1,0 +1,7 @@
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/bin/Debug/AquaintDemoLive.pdb
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/bin/Debug/AquaintDemoLive.dll
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/obj/Debug/AquaintDemoLive.dll
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/obj/Debug/AquaintDemoLive.pdb
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/bin/Debug/nunit.framework.dll
+/Users/junecho/Projects/AquaintDemoLive/AquaintDemoLive/bin/Debug/Xamarin.UITest.dll
