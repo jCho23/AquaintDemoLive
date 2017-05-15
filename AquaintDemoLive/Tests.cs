@@ -41,6 +41,7 @@ namespace AquaintDemoLive
 
 		[Test]
 		public void AddContactTest()
+		//PRO-TIP: Naming conventions of tests should reflect a behavioral user action 
 		{
 
 		}
