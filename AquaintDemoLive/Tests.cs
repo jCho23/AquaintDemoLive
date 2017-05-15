@@ -23,11 +23,8 @@ namespace AquaintDemoLive
 		public void BeforeEachTest()
 		{
 			app = AppInitializer.StartApp(platform);
-
 			app.Screenshot("App Launched");
 			//This is an easy way to make sure that the app successfully launches before the tests begin
-			app.WaitForElement(x => x.Marked("setupDataPartitionPhraseField"), timeout: TimeSpan.FromSeconds(80));
-			//'app.WaitForElement' is inputed here because we want all the elements that we want to interact with to populate before we run any tests
 		}
 
 		[Test]
@@ -43,8 +40,9 @@ namespace AquaintDemoLive
 		public void AddContactTest()
 		//PRO-TIP: Naming conventions of tests should reflect a behavioral user action 
 		{
-			app.WaitForElement(x => x.Marked(""), timeout: TimeSpan.FromSeconds(80));
+			app.WaitForElement(x => x.Class("android.widget.EditText").Index(0), timeout: TimeSpan.FromSeconds(80));
 			//PRO-TIP: 'WaitForElement' is extremely useful when you need to slow down the test for the elements to populate on the page
+			app.Tap(x => x.Class("android.widget.EditText").Index(0));
 			app.EnterText("juneDemo");
 			app.DismissKeyboard();
 			app.Tap("setupContinueButton");
@@ -106,6 +104,9 @@ namespace AquaintDemoLive
 		[Test]
 		public void CheckContactTest()
 		{
+			app.WaitForElement(x => x.Class("android.widget.EditText").Index(0), timeout: TimeSpan.FromSeconds(80));
+			app.Tap(x => x.Class("android.widget.EditText").Index(0));
+			app.Screenshot("Let's start by tapping on the 'Text Edit' Field");
 			app.EnterText("juneDemo");
 			app.Screenshot("We entered in our credentials");
 			app.DismissKeyboard();
