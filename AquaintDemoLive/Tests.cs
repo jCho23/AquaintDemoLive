@@ -70,6 +70,15 @@ namespace AquaintDemoLive
 			app.Screenshot("Dismissed Keyboard");
 			#endregion
 
+			#region CompanyName
+			app.Tap("companyField");
+			app.Screenshot("Then we Tapped on the 'Company' Text Field");
+			app.EnterText("Microsoft");
+			app.Screenshot("We typed in our company, 'Microsoft'");
+			app.DismissKeyboard();
+			app.Screenshot("Dismissed Keyboard");
+			#endregion
+
 		}
 
 	}
