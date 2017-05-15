@@ -43,6 +43,7 @@ namespace AquaintDemoLive
 		public void AddContactTest()
 		//PRO-TIP: Naming conventions of tests should reflect a behavioral user action 
 		{
+			app.WaitForElement(x => x.Marked(""), timeout: TimeSpan.FromSeconds(80));
 			//PRO-TIP: 'WaitForElement' is extremely useful when you need to slow down the test for the elements to populate on the page
 			app.EnterText("juneDemo");
 			app.DismissKeyboard();
