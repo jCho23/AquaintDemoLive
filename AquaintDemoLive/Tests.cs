@@ -43,7 +43,14 @@ namespace AquaintDemoLive
 		public void AddContactTest()
 		//PRO-TIP: Naming conventions of tests should reflect a behavioral user action 
 		{
+			//PRO-TIP: 'WaitForElement' is extremely useful when you need to slow down the test for the elements to populate on the page
+			app.EnterText("juneDemo");
+			app.DismissKeyboard();
+			app.Tap("setupContinueButton");
+			//PRO-TIP: The test steps taken above will NOT appear in Test Cloud becuase I did not put screenshots
 
+			app.Tap("acquaintanceListFloatingActionButton");
+			app.Screenshot("Let's start by Tapping on the Floating Action Button to add a new contact");
 		}
 
 	}
