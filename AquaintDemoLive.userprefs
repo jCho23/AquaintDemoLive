@@ -1,9 +1,24 @@
 ﻿<Properties StartupConfiguration="{0658A928-D2AD-4B21-A6B6-914F3172626C}|Unit Tests">
   <MonoDevelop.Ide.Workbench ActiveDocument="AquaintDemoLive/Tests.cs">
     <Files>
-      <File FileName="AquaintDemoLive/Tests.cs" Line="22" Column="10" />
+      <File FileName="AquaintDemoLive/Tests.cs" Line="1" Column="1" />
       <File FileName="AquaintDemoLive/AppInitializer.cs" Line="12" Column="4" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="AquaintDemoLive" expanded="True">
+            <Node name="AquaintDemoLive" expanded="True">
+              <Node name="AquaintDemoLive" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="Tests(Android)" expanded="True" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.AquaintDemoLive PreferredExecutionTarget="MonoDevelop.Default" />
