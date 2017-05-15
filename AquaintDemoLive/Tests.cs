@@ -23,6 +23,11 @@ namespace AquaintDemoLive
 		public void BeforeEachTest()
 		{
 			app = AppInitializer.StartApp(platform);
+
+			app.Screenshot("App Launched");
+			//This is an easy way to make sure that the app successfully launches before the tests begin
+			app.WaitForElement(x => x.Marked("setupDataPartitionPhraseField"), timeout: TimeSpan.FromSeconds(80));
+			//'app.WaitForElement' is inputed here because we want all the elements that we want to interact with to populate before we run any tests
 		}
 
 		[Test]
