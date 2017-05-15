@@ -97,6 +97,9 @@ namespace AquaintDemoLive
 			app.Screenshot("Dismissed Keyboard");
 			#endregion
 
+			app.Tap("acquaintanceSaveButton");
+			app.Screenshot("Lastly, we saved our new contact");
+
 		}
 
 	}
