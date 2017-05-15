@@ -88,6 +88,15 @@ namespace AquaintDemoLive
 			app.Screenshot("Dismissed Keyboard");
 			#endregion
 
+			#region PhoneNumber
+			app.Tap("phoneNumberField");
+			app.Screenshot("Then we Tapped on the 'Phone Number' Text Field");
+			app.EnterText("1111111111");
+			app.Screenshot("We typed in our phone number, '1111111111'");
+			app.DismissKeyboard();
+			app.Screenshot("Dismissed Keyboard");
+			#endregion
+
 		}
 
 	}
