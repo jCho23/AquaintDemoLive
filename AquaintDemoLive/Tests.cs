@@ -111,6 +111,10 @@ namespace AquaintDemoLive
 			app.Screenshot("Dismissed Keyboard");
 			app.Tap("setupContinueButton");
 			app.Screenshot("Then we Tapped on the 'Continue' Button");
+
+			app.Tap("Gates, Bill");
+			//PRO-TIP: We are using the name becuase it's the least brittle element 
+			app.Screenshot("We confirmed our contact that we made");
 		}
 
 	}
