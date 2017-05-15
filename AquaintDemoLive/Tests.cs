@@ -79,6 +79,15 @@ namespace AquaintDemoLive
 			app.Screenshot("Dismissed Keyboard");
 			#endregion
 
+			#region JobTitle
+			app.Tap("jobTitleField");
+			app.Screenshot("Then we Tapped on the 'Title' Text Field");
+			app.EnterText("CEO");
+			app.Screenshot("We typed in our title, 'CEO'");
+			app.DismissKeyboard();
+			app.Screenshot("Dismissed Keyboard");
+			#endregion
+
 		}
 
 	}
