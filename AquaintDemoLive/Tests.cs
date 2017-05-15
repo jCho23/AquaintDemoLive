@@ -51,6 +51,7 @@ namespace AquaintDemoLive
 
 			app.Tap("acquaintanceListFloatingActionButton");
 			app.Screenshot("Let's start by Tapping on the Floating Action Button to add a new contact");
+			//PRO-TIP: Screenshots will enable to view the step definition in the Test Cloud portal 
 
 			#region FirstName
 			app.Tap("firstNameField");
@@ -104,7 +105,12 @@ namespace AquaintDemoLive
 		[Test]
 		public void CheckContactTest()
 		{
-			
+			app.EnterText("juneDemo");
+			app.Screenshot("We entered in our credentials");
+			app.DismissKeyboard();
+			app.Screenshot("Dismissed Keyboard");
+			app.Tap("setupContinueButton");
+			app.Screenshot("Then we Tapped on the 'Continue' Button");
 		}
 
 	}
