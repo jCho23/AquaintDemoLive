@@ -60,6 +60,16 @@ namespace AquaintDemoLive
 			app.DismissKeyboard();
 			app.Screenshot("Dismissed Keyboard");
 			#endregion
+
+			#region LastName
+			app.Tap("lastNameField");
+			app.Screenshot("Next we Tapped on the 'Last Name' Text Field");
+			app.EnterText("Gates");
+			app.Screenshot("We typed in our first name, 'Gates'");
+			app.DismissKeyboard();
+			app.Screenshot("Dismissed Keyboard");
+			#endregion
+
 		}
 
 	}
